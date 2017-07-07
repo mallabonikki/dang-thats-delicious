@@ -29,4 +29,22 @@ That will populate 16 stores with 3 authors and 41 reviews. The logins for the a
     Pug to HTML
     Babel Highlighting
 
+#### MongoDB/mLab Setup, Configuration and Deployment
+    1. Go to mLab to choose and create cloud provider hosting for deployment
+        - select Amazon Web Services
+        - Sandax, shared, .5gb, free
+        - Select MongoDB version
+        - Enter Database Name (dang-thats-delicious)
+    2. Go to App Folder, select variables.env.sample and rename to variables.env
+    3. Go to mLab then copy the connection string and paste into variables.env with DATABASE=
+    4. Go to mLab, Select Users, Add new database user
+        - Enter Database Name, Database Password, Confirm and click create(dang-thats-delicious, dang, dang)
+    4. Go to App Folder, select variables.env, at DATABASE line replace the syntax and enter the database name and password that was entered in the mLab Users .
+    5. Go to MongoDB Website and Donwload the MongoDB Compass for localhost database manipulation.
+        - Open CMD then prompt to MongodDB Compass installation folder and type > mongod.
+            - An error will occur, to solve, create a path C:\Data\db
 
+    
+
+
+        
